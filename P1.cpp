@@ -14,7 +14,7 @@ pthread_mutex_t rearMutex = PTHREAD_MUTEX_INITIALIZER;		// mutex to allot next t
 pthread_mutex_t checkQueueMutex = PTHREAD_MUTEX_INITIALIZER;	// mutex to check if queue is empty
 pthread_mutex_t questionMutex = PTHREAD_MUTEX_INITIALIZER;	// mutex used with cond: questionStartDone
 pthread_mutex_t answerMutex = PTHREAD_MUTEX_INITIALIZER;	// mutex used with cond: answerDone
-pthread_mutex_t currMutex = PTHREAD_MUTEX_INITIALIZER;		// mutex used while updating the variables curr_qid and curr_sid
+pthread_mutex_t currMutex = PTHREAD_MUTEX_INITIALIZER;		// mutex used while updating curr_qid and curr_sid
 pthread_cond_t questionStartDone = PTHREAD_COND_INITIALIZER;	// signal from QuestionStart() to AnswerStart()
 pthread_cond_t answerDone = PTHREAD_COND_INITIALIZER;		// signal from AnswerDone() to QuestionDone()
 
