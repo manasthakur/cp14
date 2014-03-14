@@ -73,7 +73,8 @@ void *TheProfessor(void *nothing) {
 	}
 }
 
-/** Spins while myTicketNum is not same as currently being answered (ensures no-starvation)
+/** 
+ * Spins while myTicketNum is not same as currently being answered (ensures no-starvation)
  */
 void QuestionStart(long sid, int i) {
 	printf("Student #%ld is ready to ask question #%d\n", sid, i);
