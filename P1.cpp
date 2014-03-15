@@ -18,7 +18,6 @@ pthread_mutex_t currMutex = PTHREAD_MUTEX_INITIALIZER;		// mutex used while upda
 pthread_cond_t questionStartDone = PTHREAD_COND_INITIALIZER;	// signal from QuestionStart() to AnswerStart()
 pthread_cond_t answerDone = PTHREAD_COND_INITIALIZER;		// signal from AnswerDone() to QuestionDone()
 
-
 /**
  * Returns true if the queue is empty
  */
