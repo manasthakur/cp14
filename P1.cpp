@@ -159,13 +159,13 @@ int main(int argc, char **argv) {
 
     workDone = true;			// indicates that all students are done, so professor can go home now
     pthread_attr_destroy(&attr);
-	pthread_mutex_destroy(&rearMutex);
-	pthread_mutex_destroy(&checkQueueMutex);
-	pthread_mutex_destroy(&questionMutex);
-	pthread_mutex_destroy(&answerMutex);
-	pthread_mutex_destroy(&currMutex);
-	pthread_cond_destroy(&questionStartDone);
-	pthread_cond_destroy(&answerDone);
-	pthread_exit(NULL);
+    pthread_mutex_destroy(&rearMutex);
+    pthread_mutex_destroy(&checkQueueMutex);
+    pthread_mutex_destroy(&questionMutex);
+    pthread_mutex_destroy(&answerMutex);
+    pthread_mutex_destroy(&currMutex);
+    pthread_cond_destroy(&questionStartDone);
+    pthread_cond_destroy(&answerDone);
+    pthread_exit(NULL);
     return 0;
 }
